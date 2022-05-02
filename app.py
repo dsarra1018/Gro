@@ -40,8 +40,14 @@ def index():
 
 @app.route("/about")
 def about():
-    """Show about pages"""
+    """Show about page"""
     return render_template("about.html")
+
+
+@app.route("/team")
+def team():
+    """Show team page"""
+    return render_template("team.html")
 
 
 @app.route("/login", methods=["GET", "POST"])
