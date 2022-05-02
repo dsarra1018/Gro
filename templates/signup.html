@@ -1,0 +1,29 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Sign Up
+{% endblock %}
+
+{% block main %}
+    <div class="container login">
+        <div class="row">
+            <div class="col">
+                <img class="homepage" src="../static/homepage.jpg" alt="https://www.vecteezy.com/free-vector/teach">
+            </div>
+            <div class="col form">
+                <form action="/signup" method="post">
+                    <div class="mb-3">
+                        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="email" name="username" placeholder="Example@email.com" type="email">
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control mx-auto w-auto" id="password" name="password" placeholder="Password" type="password">
+                    </div>
+                    <div class="mb-3">
+                        <input class="form-control mx-auto w-auto" name="confirmation" placeholder="Confirm Password" type="password">
+                    </div>
+                    <button class="btn btn-success" type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
