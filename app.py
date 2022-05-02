@@ -50,6 +50,12 @@ def team():
     return render_template("team.html")
 
 
+@app.route("/careers")
+def careers():
+    """Show careers page"""
+    return render_template("careers.html")
+
+
 @app.route("/login", methods=["GET", "POST"])
 def login():
     """Log user in"""
